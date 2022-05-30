@@ -62,13 +62,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Celsius" />
+            android:text="Dollar" />
 
         <RadioButton
             android:id="@+id/to_fahrenheit"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_marginBottom="28dp"
-            android:text="Fahrenheit" />
+            android:text="Euro" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -102,14 +102,14 @@ public class DegreesFragment extends Fragment {
                     String selectedOpt = opt.getText().toString();
                     double value = Double.parseDouble(inputValue.getText().toString());
 
-                    if(selectedOpt.equals("Celsius")) {
-                        double degFar = converterClass.celsiusToFahrenheit(value);
-                        db.execSQL("INSERT INTO operations(initVal, valConverted) VALUES('" + value +  " C°', '" + Double.toString(degFar) + " F°')");
-                        showValueConverted.setText(Double.toString(degFar));
+                    if(selectedOpt.equals("Dollar")) {
+                        double doll = converterClass.realToDollar(value);
+                        db.execSQL("INSERT INTO operations(initVal, valConverted) VALUES('" + value +  " R$', '" + Double.toString(doll) + " $')");
+                        showValueConverted.setText(Double.toString(doll));
                     } else {
-                        double degCel = converterClass.fahrenheitToCelsius(value);
-                        db.execSQL("INSERT INTO operations(initVal, valConverted) VALUES('" + value + " F°', '" + Double.toString(degCel) + " C°')");
-                        showValueConverted.setText(Double.toString(degCel));
+                        double eur = converterClass.realToEuro(value);
+                        db.execSQL("INSERT INTO operations(initVal, valConverted) VALUES('" + value + " R$', '" + Double.toString(eur) + " €')");
+                        showValueConverted.setText(Double.toString(eur));
                     }
                 }
             }

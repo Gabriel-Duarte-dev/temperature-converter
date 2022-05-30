@@ -2,7 +2,7 @@
     <string name="app_name">CalculatorDegree</string>
 
     <string name="history">History</string>
-    <string name="degrees">Degrees</string>
+    <string name="coins">Coins</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="button">Button</string>

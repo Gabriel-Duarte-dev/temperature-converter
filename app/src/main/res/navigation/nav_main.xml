@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/history">
+    app:startDestination="@id/coins">
 
     <fragment
         android:id="@+id/history"
@@ -11,7 +11,7 @@
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
     <fragment
-        android:id="@+id/degrees"
+        android:id="@+id/coins"
         android:name="com.example.calculatordegree.fragments.DegreesFragment"
         android:label="fragment_degrees"
         tools:layout="@layout/fragment_degrees" />
